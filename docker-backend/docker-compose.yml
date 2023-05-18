@@ -1,0 +1,19 @@
+services:
+  postgresql_db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: testuser
+      POSTGRES_PASSWORD: example
+      POSTGRES_DB: dbname
+    volumes:
+      - pgdata:"C:\Users\Martin\Nextcloud\Projects\Coding\VSCode\"
+
+volumes:
+  pgdata:
+
+  adminer:
+    image: adminer
+    restart: always
+    ports: 
+      - 8080:8080

@@ -16,6 +16,7 @@ dist-ssr
 .temp
 .plan.txt
 .vscode/*
+/personal/*
 !.vscode/extensions.json
 .idea
 .DS_Store
